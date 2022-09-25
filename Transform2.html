@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> DEMO</title>
+
+
+	<style>
+		
+		div
+		{
+			box-shadow:0 0 10px black;
+			width:260px;
+			height:260px;
+			margin:60px auto;
+			border-radius:10px;
+			overflow:hidden;
+			position:relative;
+		}
+	
+		#one
+		{
+			position:absolute;
+			width:inherit;
+			height:inherit;
+			border-radius:inherit;
+			transition:all 1s linear 0s;
+		}
+		#two{
+			position:absolute;
+			width:inherit;
+			height:inherit;
+			border-radius:inherit;
+			transition:all 1s linear 1s;
+		}
+		#three{
+			position:absolute;
+			width:inherit;
+			height:inherit;
+			border-radius:inherit;
+			transition:all 1s linear 2s;
+		}
+		#four{
+			position:absolute;
+			width:inherit;
+			height:inherit;
+			border-radius:inherit;
+			transition:all 1s linear 3s;
+		}
+		#five{
+			position:absolute;
+			width:inherit;
+			height:inherit;
+			border-radius:inherit;
+			/*transition:all 1s linear 3s;*/
+		}
+
+		div:hover
+		{
+			cursor:pointer;
+
+		}
+
+		div:hover>#one
+		{
+			transform:translateX(100%);
+		}
+
+		div:hover>#two
+		{
+			transform:translateX(-100%);
+		}
+		div:hover>#three
+		{
+			transform:translateY(100%);
+		}
+		div:hover>#four
+		{
+			transform:translateY(-100%);
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		
+		<img src="emoji.gif" id="five">
+		<img src="02.jpg" id="four">
+		<img src="05.jpg" id="three">
+		<img src="123.jpg" id="two">
+		<img src="shirt.jpg" id="one">
+		
+	</div>
+
+
+
+
+</body>
+</html>
